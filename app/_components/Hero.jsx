@@ -49,28 +49,25 @@ function Hero() {
       </div>
 
       <div className="mt-8 p-8 bg-white rounded-lg shadow-md text-center text-gray-700 w-3/4 flex">
-        <div className="w-1/2 pr-8 order-2">
+        <div className="w-1/2 pr- order-2">
           <h3 className="text-2xl font-semibold mb-4">Layanan Home Service Kami</h3>
           <p className="text-lg mb-4">Kami menawarkan berbagai layanan home service, termasuk perbaikan dan pemeliharaan berbagai perangkat rumah tangga, instalasi peralatan baru, serta layanan kebersihan dan perawatan rumah secara menyeluruh.</p>
-          <Button className='bg-purple-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-purple-700 transition'>
-            Lihat Layanan Kami
-          </Button>
         </div>
-        <div className="w-1/2 pl-8 order-1">
+        <div className="w-1/2 pl-1 order-1">
           <img src="/assets/images/service.jpg" alt="service2" className="rounded-lg shadow-lg" />
         </div>
       </div>
 
 
       <div className="mt-8 p-8 bg-white rounded-lg shadow-md text-center text-gray-700 w-3/4 flex">
-        <div className="w-1/2 pr-8 order-2">
+        <div className="w-1/2 pr-1 order-2">
           <h3 className="text-2xl font-semibold mb-4">Karir di Go Home Service</h3>
           <p className="text-lg mb-4">Bergabunglah bersama kami untuk membentuk kembali gaya hidup Indonesia di rumah! Bekerja dengan rekan-rekan terbaik dari mana saja.</p>
           <Button className='bg-purple-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-purple-700 transition'>
             Lihat Lowongan
           </Button>
         </div>
-        <div className="w-1/2 pl-8 order-1">
+        <div className="w-1/2 pl-1 order-1">
           <img src="/assets/images/career.jpg" alt="career" className="rounded-lg shadow-lg" />
         </div>
       </div>
