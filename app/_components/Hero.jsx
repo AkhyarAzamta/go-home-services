@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Search } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
@@ -15,9 +14,11 @@ function Hero() {
             <br /> Near You
           </h2>
           <h2 className='text-xl text-gray-200 mb-8'>Explore Best Home Service & Repair near you</h2>
-          <Button className='bg-white text-purple-700 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition mb-6'>
-            Get Started
-          </Button>
+          <Link href="/services">
+            <Button className='bg-white text-purple-700 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition mb-6'>
+              Get Started
+            </Button>
+          </Link>
         </div>
       </div>
       
