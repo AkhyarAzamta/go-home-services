@@ -27,6 +27,7 @@ const getAllBusinessList=async()=>{
     query BusinessList {
         businessLists {
           about
+          title
           address
           category {
             name
@@ -158,8 +159,8 @@ const deleteBooking=async(bookingId)=>{
   const mutationQuery=gql`
   mutation DeleteBooking {
     updateBooking(
-      data: {userName: "RRRS"}
-      where: {id: "cltastwp36re707jzb02sgdlm"}
+      data: {userName: ""}
+      where: {id: "`+bookingId+`"}
     ) {
       id
     }

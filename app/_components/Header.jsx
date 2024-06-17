@@ -25,17 +25,17 @@ function Header() {
     <div className='p-5 shadow-sm flex  justify-between
     '>
         <div className='flex items-center gap-8 '>
-            <Image src='/logo.svg' alt='logo'
-            width={180} height={100} />
+            <Image src='/logo.png' alt='logo'
+            width={120} height={100} />
             <div className='md:flex items-center
             gap-6 hidden
             '>
                 <Link href={'/'} className='hover:scale-105 hover:text-primary
                 cursor-pointer'>Home</Link>
-                <h2 className='hover:scale-105 hover:text-primary
-                cursor-pointer'>Services</h2>
-                <h2 className='hover:scale-105 hover:text-primary
-                cursor-pointer'>About Us</h2>
+                <Link href={'/services'} className='hover:scale-105 hover:text-primary
+                cursor-pointer'>Services</Link>
+                <Link href={'/about'} className='hover:scale-105 hover:text-primary
+                cursor-pointer'>About Us</Link>
 
             </div>
            

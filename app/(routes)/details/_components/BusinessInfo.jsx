@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Clock, Mail, MapPin, Share, User } from 'lucide-react'
+import { Clock, Mail, MapPin, Share, Star } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -26,7 +26,7 @@ function BusinessInfo({business}) {
       </div>
       <div className='flex flex-col gap-5 items-end'>
         <Button><Share/></Button>
-        <h2 className='flex gap-2 text-xl text-primary'><User/> {business.contactPerson} </h2>
+        <h2 className='flex gap-2 text-xl text-primary'><Star/> {business.contactPerson} </h2>
         <h2 className='flex gap-2 text-xl text-gray-500'><Clock/> Available 8:00 AM to 10:PM </h2>
       
       </div>

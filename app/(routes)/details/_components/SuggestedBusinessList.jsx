@@ -1,6 +1,6 @@
 import GlobalApi from '@/app/_services/GlobalApi';
 import { Button } from '@/components/ui/button'
-import {  NotebookPen } from 'lucide-react'
+import {  NotebookPen, Star } from 'lucide-react'
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
@@ -58,7 +58,7 @@ function SuggestedBusinessList({business}) {
             />
             <div className=''>
               <h2 className='font-bold'>{business.name}</h2>
-              <h2 className='text-primary'>{business.contactPerson}</h2>
+              <h2 className='text-primary'><Star/> {business.contactPerson}</h2>
               <h2 className='text-gray-400'>{business.address}</h2>
 
             </div>

@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { MapPin, Star } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -8,7 +9,7 @@ function BusinessList({businessList,title}) {
     <div className='mt-5'>
         <h2 className='font-bold text-[22px]'>{title}</h2>
         <div className='grid grid-cols-2 md:grid-cols-3
-        lg:grid-cols-4 gap-6 mt-5 '>
+        lg:grid-cols-4 gap-6 mt-5 mb-16'>
             {businessList.length>0?businessList.map((business,index)=>(
                 <Link href={'/details/'+business.id}
                 key={index} className='shadow-md 
@@ -26,11 +27,16 @@ function BusinessList({businessList,title}) {
                     items-baseline p-3 gap-1'>
                         <h2 className='p-1 bg-purple-200
                         text-primary rounded-full px-2
-                         text-[12px]'>{business.category.name}</h2>
+                        text-[12px]'>{business.category.name}</h2>
+                        <div className='flex gap-2 right-0 w-full justify-between'>
+                            <div>
                         <h2 className='font-bold text-lg'>{business.name}</h2>
-                        <h2 className='text-primary'>{business.contactPerson}</h2>
-                        <h2 className='text-gray-500 text-sm'>{business.address}</h2>
+                        <h2 className='text-primary flex'><Star/> {business.contactPerson}</h2>
+                        <h2 className='text-gray-500 mt-1 text-sm flex'><MapPin /> {business.address}</h2>
+                            </div>
                         <Button className="rounded-lg mt-3">Book Now</Button>
+                        </div>
+                        <p className='text-gray-500 text-sm'>{business.title}</p>
                     </div>
                 </Link>
             ))

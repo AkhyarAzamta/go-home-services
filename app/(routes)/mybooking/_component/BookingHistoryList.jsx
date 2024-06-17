@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Calendar, Clock, MapPin, User } from 'lucide-react'
+import { Calendar, Clock, MapPin, Star } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 import {
@@ -46,7 +46,7 @@ function BookingHistoryList({bookingHistory,type}) {
                 />}
                 <div className='flex flex-col gap-2'>
                 <h2 className='font-bold'>{booking.businessList.name}</h2>
-                <h2 className='flex gap-2 text-primary'> <User/> {booking.businessList.contactPerson}</h2>
+                <h2 className='flex gap-2 text-primary'> <Star/> {booking.businessList.contactPerson}</h2>
                 <h2 className='flex gap-2 text-gray-500'> <MapPin className='text-primary'/> {booking.businessList.address}</h2>
                 <h2 className='flex gap-2 text-gray-500'>
                      <Calendar className='text-primary'/> 
