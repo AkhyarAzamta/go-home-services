@@ -30,6 +30,13 @@ To run this project, you will need to add the following environment variables to
 `DESCOPE_CLIENT_ID=`
 
 `NEXTAUTH_SECRET=`
+## Tech Stack
+
+**Client:** Next, TailwindCSS
+
+**Server:** [Hygraph](https://hygraph.com/), [Descope](https://www.descope.com/)
+
+
 ## Demo
 
 [Go Home Services](go-home-services.vercel.app)
