@@ -32,7 +32,7 @@ To run this project, you will need to add the following environment variables to
 `NEXTAUTH_SECRET=`
 ## Tech Stack
 
-**Client:** Next, TailwindCSS
+**Client:** [Next](https://nextjs.org/), [TailwindCSS](https://tailwindcss.com/)
 
 **Server:** [Hygraph](https://hygraph.com/), [Descope](https://www.descope.com/)
 
