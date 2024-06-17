@@ -11,7 +11,7 @@ export const authOptions = {
         authorization: { params: { scope: "openid email profile" } },
         idToken: true,
         clientId: process.env.DESCOPE_CLIENT_ID,
-        clientSecret: "<Descope Access Key>",
+        clientSecret: process.env.DESCOPE_CLIENT_ID,
         checks: ["pkce", "state"],
         profile(profile) {
             return {
@@ -21,9 +21,9 @@ export const authOptions = {
                 image: profile.picture,
             }
         },
+        secret: process.env.NEXTAUTH_SECRET,
     }]
 }  
-
 
 const handler = NextAuth(authOptions)
 export { handler as GET, handler as POST }
